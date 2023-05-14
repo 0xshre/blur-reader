@@ -1,0 +1,12 @@
+.custom-paragraph {
+    transition: opacity 0.3s;
+  }
+  
+  .custom-paragraph:hover {
+    opacity: 1 !important;
+  }
+  
+  body:hover .custom-paragraph {
+    opacity: 0.3;
+  }
+  
