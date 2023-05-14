@@ -1,14 +1,15 @@
 {
-    "manifest_version": 2,
-    "name": "Blur Reader",
+    "manifest_version": 3,
+    "name": "Blur Paragraphs",
     "version": "1.0",
-    "description": "Blurs other paragraphs when hovering over a paragraph.",
+    "description": "Blur the paragraph which are not hovered by the mouse",
     "content_scripts": [
-      {
-        "matches": ["*://*/*"],
-        "css": ["blur_paragraphs.css"],
-        "js": ["blur_paragraphs.js"]
-      }
-    ],
-    "permissions": ["activeTab"]
-  }  
+        {
+          "js": ["blur_paragraphs.js"],
+          "css": ["blur_paragraphs.css"],
+          "matches": [
+            "*://*/*"
+          ]
+        }
+      ]
+  }
